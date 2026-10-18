@@ -748,4 +748,172 @@ footer a {
   .education-card h3 {
     font-size: 18px;
   }
+}/* ===== MOBILE RESPONSIVE DESIGN ===== */
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 16px 5%;
+  }
+
+  .navbar nav {
+    order: 3;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .navbar nav a {
+    font-size: 14px;
+  }
+
+  .resume-link {
+    font-size: 13px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 35px;
+    padding: 55px 6%;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(38px, 10vw, 56px);
+  }
+
+  .hero-text h2 {
+    font-size: 23px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo-frame {
+    width: min(100%, 320px);
+  }
+
+  .photo-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .section {
+    padding: 55px 6%;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .about h2,
+  .section h2 {
+    font-size: 29px;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .skill {
+    padding: 14px 10px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project {
+    min-width: 0;
+    padding: 22px;
+  }
+
+  .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .education-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .education-card {
+    min-width: 0;
+    padding: 22px;
+  }
+
+  .education-top {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+    text-align: center;
+    padding: 22px 5%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons .button {
+    text-align: center;
+  }
+
+  .resume-link {
+    font-size: 12px;
+  }
 }
